@@ -1,6 +1,6 @@
 # Electronics Shop Web App - Shop Today
 
-Made with https://github.com/mrunknown1234 's Shop Today Template
+Made with https://github.com/mrunknown1234/shop-today 's Shop Today Template
 
 
 ## Developed By,
