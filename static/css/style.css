@@ -1,0 +1,335 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Rubik+Distressed&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 100%;
+}
+/*---for navigational bar----*/
+.navbar {
+  display: flex;
+  padding: 20px 5%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  background-color: #f3f4f6;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+  top: 0;
+}
+.menu-btn {
+  color: #424144;
+  font-size: 23px;
+  display: none;
+  cursor: pointer;
+}
+.navbar .logo h1 {
+  color: #424144;
+  border-bottom: 4px solid #fd6561;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.navbar .menu li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar .menu a {
+  display: block;
+  margin-left: 25px;
+  color: #424144;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.navbar .menu li a i {
+  color: #f63e4e;
+}
+.navbar .menu li .active {
+  border-bottom: 4px solid #f63e4e;
+}
+.navbar .menu li a:hover {
+  border-bottom: 4px solid #f63e4e;
+}
+/*-------starting content---------*/
+.content {
+  background-image: url(/template/images/shop2.jpg);
+  height: 100vh;
+  padding: 0 5%;
+  flex-direction: column;
+  min-width: fit-content;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #424144;
+  display: flex;
+}
+.content h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.content p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.content .content-btn {
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  color: white;
+  background-color: #f63e4e;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+/*--------second block--------*/
+.pheading {
+  text-align: center;
+  margin: 50px 0;
+  color: #424144;
+}
+/*-------Products---------*/
+.sec {
+  padding: 10px 3%;
+}
+/*to make the products responsive to min and max*/
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
+}
+/*---card styles---*/
+.products .card {
+  width: 400px;
+  background-color: #f5f5f5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.products .card img {
+  height: 250px;
+  width: 390px;
+}
+.products .card .desc {
+  text-align: center;
+  opacity: 70%;
+  font-size: 20px;
+}
+.products .card .title {
+  font-weight: 900;
+  padding: 0 20px;
+  font-size: 30px;
+  color: #424144;
+}
+.products .card .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.products .box .price {
+  color: #f63e4e;
+  font-size: 20px;
+  font-weight: bold;
+}
+.products .box .btn {
+  font-size: 20px;
+  color: #f63e4e;
+  font-weight: 900;
+  border-radius: 20px;
+  border-color: #f63e4e;
+  padding: 3px;
+}
+.products .box .btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #f63e4e;
+}
+/*-----footer-----*/
+footer {
+
+  background-color: #f3f4f6;
+  height: 10vh;
+}
+footer p {
+  text-align: center;
+  line-height: 10vh;
+}
+footer p a {
+  text-decoration: none;
+  color: #f63e4e;
+  font-weight: bold;
+}
+/*-----Responsive-----*/
+.productInfo{
+  width: 800px;
+  height: auto;
+  overflow-y: auto;
+  /* margin-left: 200px; */
+  /* border: 2px solid red; */
+}
+
+.infoTitle{
+  font-weight: 1000;
+  color: rgb(63, 54, 54);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.placeOrderForm{
+  margin-left: 80px;
+  width: 800px;
+  height: 1000px;
+  display: flex;
+  color: orange;
+  font-size: 18px;
+  font-weight: 1000;
+  
+}
+
+.inputForm{
+  display: flex;
+  border: none;
+  background-color: rgb(231, 229, 229);
+  border-bottom: 2px dashed orange;
+  outline: none;
+  padding: 5px;
+  color: rgb(255, 94, 0);
+}
+
+.mycontainer{
+  max-width: 100%;
+}
+
+.button-77 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: orange;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  border-radius: 80px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
+}
+
+.button-77:before,
+.button-77:after {
+  border-radius: 80px;
+}
+
+.button-77:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-77:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  background-color: red;
+}
+
+.button-77:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-77:hover{
+  background-color: red;
+}
+
+.button-77:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-77:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+.successMessage{
+  width: 100%;
+  background-color: rgb(45, 248, 45);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+  border-radius: 80px;
+}
+
+.strippedBorder{
+  border: 2px dashed rgb(243, 0, 0); 
+  width: 90%; 
+  margin: auto; 
+  margin-top: 5%; 
+  margin-bottom: 5%;
+}
