@@ -20,3 +20,8 @@ Use python Version 3.10.x
 `pip install -r requirements.txt`
 
 `python startApp.py`
+
+
+-------------------
+**Under Development**
+-------------------
